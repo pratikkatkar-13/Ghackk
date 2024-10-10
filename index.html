@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fantasy Manhwa List</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Top Fantasy Manhwa</h1>
-    <ul id="manhwa-list"></ul>
+    <div class="container">
+        <h1>Top Fantasy Manhwa</h1>
+        <ul id="manhwa-list"></ul>
+    </div>
     <script>
         const manhwaData = [
             {"title": "Manhwa Title 1", "genre": "Fantasy", "description": "A brief description of Manhwa Title 1."},
-            {"title": "Manhwa Title 2", "genre": "Adventure", "description": "A brief description of Manhwa Title 2."}
+            {"title": "Manhwa Title 2", "genre": "Adventure", "description": "A brief description of Manhwa Title 2."},
+            {"title": "Manhwa Title 3", "genre": "Action", "description": "A brief description of Manhwa Title 3."},
+            {"title": "Manhwa Title 4", "genre": "Romance", "description": "A brief description of Manhwa Title 4."}
         ];
         const listElement = document.getElementById('manhwa-list');
         manhwaData.forEach(manhwa => {
