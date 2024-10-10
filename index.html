@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Manhwa List</title>
+</head>
+<body>
+    <h1>Top Fantasy Manhwa</h1>
+    <ul id="manhwa-list"></ul>
+    <script>
+        const manhwaData = [
+            {"title": "Manhwa Title 1", "genre": "Fantasy", "description": "A brief description of Manhwa Title 1."},
+            {"title": "Manhwa Title 2", "genre": "Adventure", "description": "A brief description of Manhwa Title 2."}
+        ];
+        const listElement = document.getElementById('manhwa-list');
+        manhwaData.forEach(manhwa => {
+            const li = document.createElement('li');
+            li.innerText = `${manhwa.title} - ${manhwa.genre}: ${manhwa.description}`;
+            listElement.appendChild(li);
+        });
+    </script>
+</body>
+</html>
